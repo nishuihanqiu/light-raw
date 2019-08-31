@@ -1,7 +1,6 @@
 package com.liliangshan.raw.common;
 
 import com.liliangshan.raw.common.column.Column;
-
 import java.util.List;
 
 /************************************

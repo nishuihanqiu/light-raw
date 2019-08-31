@@ -27,10 +27,27 @@
         <module>common</module>
         <module>core</module>
         <module>transformer</module>
+        <module>csv</module>
+        <module>xls</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.github.li-liangshan</groupId>
+                <artifactId>raw-common</artifactId>
+                <version>${light-raw-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.li-liangshan</groupId>
+                <artifactId>raw-core</artifactId>
+                <version>${light-raw-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.li-liangshan</groupId>
+                <artifactId>raw-transformer</artifactId>
+                <version>${light-raw-version}</version>
+            </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -51,6 +68,21 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.28</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>log4j-over-slf4j</artifactId>
+                <version>1.7.28</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
